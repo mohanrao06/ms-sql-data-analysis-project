@@ -1,75 +1,42 @@
 # MS SQL Data Analysis Project
 
 ## 📌 Project Overview
-This project demonstrates an end-to-end data analysis workflow using 
-Microsoft SQL Server. The objective is to analyze structured business data, 
-clean and transform it using SQL, and extract meaningful insights to support 
-data-driven decision-making.
+This project focuses on performing data analysis using **Microsoft SQL Server**.
+The goal is to practice real-world SQL skills such as database creation,
+data import, schema design, and exploratory data analysis.
 
----
+## 🗂️ Dataset
+- Source: CSV files (manually imported into MS SQL Server)
+- Data Type: sales / customers
 
-## 🛠 Tools & Technologies
+## 🛠️ Tools & Technologies
 - Microsoft SQL Server
 - SQL Server Management Studio (SSMS)
-- SQL (CTEs, Joins, Window Functions)
 - Git & GitHub
 
----
+## 🏗️ Work Completed So Far
+- ✅ Created database
+- ✅ Imported CSV files into SQL Server
+- ✅ Designed and created database schema
+- ✅ Performed initial database exploration
+  - Table structure analysis
+  - Row counts
+  - Basic SELECT queries
 
-## 📊 Dataset
-The dataset consists of structured business data such as customers, orders, 
-products, and transactions. It is used to perform exploratory analysis, 
-trend analysis, and business performance evaluation.
+## 🔍 Sample SQL Tasks
+- Viewing table structures
+- Exploring data distributions
+- Checking null values
+- Understanding relationships between tables
 
-*(Dataset source can be added here if applicable)*
+## 🚀 Upcoming Work
+- Advanced SQL queries (JOINs, GROUP BY, HAVING)
+- Business-focused analysis
+- KPIs and insights
+- Performance optimization
+- Documentation and final conclusions
 
----
-
-## ❓ Business Questions
-- What are the overall sales and revenue trends?
-- Which products and categories perform best?
-- Who are the top customers by revenue?
-- How does performance vary by time and region?
-
----
-
-## 🔍 Analysis Performed
-- Database and table creation
-- Data cleaning and type correction
-- Exploratory data analysis (EDA)
-- Business-focused analytical queries
-- Advanced SQL using CTEs and window functions
-
----
-
-## 📁 Project Structure
-
-```text
-ms-sql-data-analysis-project/
-│
-├── data/
-├── sql/
-├── docs/
-├── images/
-└── README.md
-
-```
-
-
-
+## 📌 Status
+🟢 Project in progress (Active learning phase)
 
 ---
-
-## 🚀 Key Skills Demonstrated
-- Relational database design
-- Data cleaning using SQL
-- Complex joins and subqueries
-- Common Table Expressions (CTEs)
-- Window functions for analytics
-- Business insight generation
-
----
-
-## 📌 Conclusion
-This project highlights practical SQL skills and analytical thinking by 
-solving real-world business problems using MS SQL Server.
