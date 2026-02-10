@@ -3,8 +3,8 @@
 ## 📌 Project Overview
 This project focuses on performing data analysis using **Microsoft SQL Server**.
 The goal is to practice real-world SQL skills such as database creation,
-data import, schema design, and exploratory data analysis using a structured,
-step-by-step approach.
+data import, schema design, exploratory data analysis, and business-focused
+insight generation.
 
 ## 🗂️ Dataset
 - **Source:** CSV files (manually imported into MS SQL Server)
@@ -27,35 +27,47 @@ step-by-step approach.
   - Basic `SELECT` queries
 
 ### Day 2 – Data & Time-Based Exploration
-- Performed **dimension exploration** to identify the number of distinct values
-  in important columns across all tables
+- Performed **dimension exploration** to identify distinct values across columns
 - Conducted **date exploration** to understand data boundaries:
   - First order date: **2010**
   - Last order date: **2014**
   - Total data timespan: **4 years**
-- Analyzed **age distribution** within the dataset:
+- Analyzed **age distribution**:
   - Minimum age: **40**
   - Maximum age: **110**
-- Gained a clear understanding of:
-  - Data scope
-  - Time coverage
-  - Data limitations before deeper analysis
+- Improved understanding of data scope and limitations
+
+### Day 3 – Business Metrics & Magnitude Analysis
+- Calculated **key business metrics (Big Numbers)** using SQL:
+  - Highest level of aggregation
+  - Lowest level of detail
+- Generated a consolidated metrics report including:
+  - Total Sales
+  - Total Quantity
+  - Average Price
+  - Total Number of Orders
+  - Total Number of Products
+  - Total Number of Customers
+- Performed **magnitude analysis**:
+  - Compared measure values across categories
+  - Identified category-level contribution and importance
+- Translated raw data into high-level business insights
 
 ## 🔍 Sample SQL Tasks Performed
-- Viewing table structures
-- Exploring data distributions
-- Checking null values
-- Counting distinct values in columns
-- Identifying minimum and maximum dates
-- Understanding relationships between tables
+- Database exploration and validation
+- Distinct value analysis
+- Date boundary identification
+- Aggregations using `SUM`, `COUNT`, `AVG`
+- Business KPI calculations
+- Category-based magnitude comparisons
 
 ## 🚀 Upcoming Work
 - Advanced SQL queries (JOINs, GROUP BY, HAVING)
-- Business-focused analysis
-- KPI calculations
-- Trend and performance analysis
-- Query optimization
-- Documentation of insights and conclusions
+- Drill-down analysis
+- Trend analysis over time
+- KPI optimization
+- Performance tuning
+- Final insights and documentation
 
 ## 📌 Project Status
 🟢 **Project in progress** (Active learning & analysis phase)
