@@ -53,23 +53,63 @@ insight generation.
   - Identified category-level contribution and importance
 - Translated raw data into high-level business insights
 
-## 🔍 Sample SQL Tasks Performed
-- Database exploration and validation
-- Distinct value analysis
-- Date boundary identification
-- Aggregations using `SUM`, `COUNT`, `AVG`
-- Business KPI calculations
-- Category-based magnitude comparisons
+## Day 4 – Magnitude & Distribution Analysis
+- Customers by country
+- Customers by gender
+- Products by category
+- Average cost per category
+- Revenue by category
+- Revenue per customer
+- Sold items distribution across countries
 
-## 🚀 Upcoming Work
-- Advanced SQL queries (JOINs, GROUP BY, HAVING)
-- Drill-down analysis
-- Trend analysis over time
-- KPI optimization
-- Performance tuning
-- Final insights and documentation
-
-## 📌 Project Status
-🟢 **Project in progress** (Active learning & analysis phase)
+Key Insight:
+- United States leads in customers
+- Bikes category generates highest revenue
 
 ---
+
+## Day 5 – Ranking Analysis
+
+Performed ranking using ORDER BY and aggregation functions.
+
+### Product Performance Analysis
+- Identified Top 5 products by revenue
+- Identified Bottom 5 products by sales
+
+### Customer Performance Analysis
+- Top 10 customers generating highest revenue
+- Bottom 5 customers with the fewest orders
+
+### Business Value
+- Identified revenue-driving products
+- Highlighted low-performing items
+- Recognized high-value customers
+- Detected low-engagement customers
+
+---
+
+## 🔍 SQL Concepts Used
+- SELECT
+- GROUP BY
+- ORDER BY
+- SUM()
+- COUNT()
+- AVG()
+- DISTINCT
+- MIN() / MAX()
+- Ranking & Top-N queries
+- Business KPI Aggregation
+
+---
+
+## 🚀 Upcoming Work
+- Window functions (RANK, DENSE_RANK)
+- Time-series analysis
+- Customer segmentation
+- Revenue growth trends
+- Advanced joins & subqueries
+
+---
+
+## 📌 Project Status
+🟢 Active – Moving toward advanced analytical SQL techniques
