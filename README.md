@@ -87,6 +87,35 @@ Performed ranking using ORDER BY and aggregation functions.
 - Detected low-engagement customers
 
 ---
+---
+
+## Day 6 – Advanced Time-Series & Cumulative Analysis
+
+### 1️⃣ Sales Performance Over Time
+- Analyzed yearly sales performance
+- Analyzed monthly sales trends
+- Aggregated:
+  - Total Sales
+  - Total Customers
+  - Total Quantity
+- Evaluated business growth from 2010–2014
+
+### 2️⃣ Cumulative Analysis (Window Functions)
+
+Implemented window functions to calculate:
+
+- Monthly total sales
+- Running total of sales over time using:
+  SUM(total_sales) OVER (ORDER BY order_date)
+- Moving average price trends using:
+  AVG(avg_price) OVER (ORDER BY order_date)
+
+### Business Impact
+- Identified revenue growth patterns
+- Measured cumulative business performance
+- Evaluated pricing trends over time
+- Determined whether the business is growing or declining
+
 
 ## 🔍 SQL Concepts Used
 - SELECT
@@ -99,6 +128,13 @@ Performed ranking using ORDER BY and aggregation functions.
 - MIN() / MAX()
 - Ranking & Top-N queries
 - Business KPI Aggregation
+- DATE functions (YEAR, MONTH, DATETRUNC)
+- Window Functions (OVER, ORDER BY)
+- Running Total
+- Moving Average
+
+---
+- 
 
 ---
 
