@@ -1,3 +1,17 @@
+/*
+===============================================================================
+Date Range Exploration 
+===============================================================================
+Purpose:
+    - To determine the temporal boundaries of key data points.
+    - To understand the range of historical data.
+
+SQL Functions Used:
+    - MIN(), MAX(), DATEDIFF()
+===============================================================================
+*/
+
+
 -- Finding the date of the first and last Order
 -- How many years of Sales are Avaiable
 -- How many months of Sales are Avaiable
