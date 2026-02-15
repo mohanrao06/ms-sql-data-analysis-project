@@ -116,6 +116,128 @@ Implemented window functions to calculate:
 - Evaluated pricing trends over time
 - Determined whether the business is growing or declining
 
+---
+
+## Day 7 – Performance & Part-to-Whole Analysis
+
+### Yearly Product Performance Analysis
+
+Analyzed product-level yearly performance using advanced window functions.
+
+- Compared current year sales to:
+  - Product’s average sales (AVG() OVER PARTITION BY)
+  - Previous year sales (LAG() OVER PARTITION BY ORDER BY)
+- Calculated:
+  - Difference from average
+  - Year-over-Year (YoY) difference
+- Categorized performance as:
+  - Above average
+  - Below average
+  - Increase / Decrease / No change
+
+### Business Insight
+- Identified consistently high-performing products
+- Detected declining product trends
+- Measured product growth momentum over time
+
+---
+
+###  Part-to-Whole (Contribution) Analysis
+
+Evaluated how each category contributes to total revenue.
+
+- Calculated total sales per category
+- Calculated overall sales using window aggregation
+- Computed percentage contribution of each category
+
+### Key Findings
+- Bikes contribute approximately 96% of total revenue
+- Accessories and Clothing contribute significantly less
+- Revenue dependency is heavily concentrated in one category
+
+---
+## 📌 Day 8 – Data Segmentation
+
+### 🔹 Overview
+Data segmentation helps group data into meaningful categories to analyze patterns and relationships between measures.
+
+---
+
+## 1️⃣ Product Cost Segmentation
+
+### 🎯 Objective
+Segment products into cost ranges and count the number of products in each segment.
+
+### 🛠 Logic Used
+- Used `CASE` statement to create cost buckets:
+  - Below 100
+  - 100–500
+  - 500–1000
+  - Above 1000
+- Used `COUNT()` to calculate total products per segment
+- Applied `GROUP BY` and `ORDER BY`
+
+### 📊 Result
+
+| Cost Range   | Total Products |
+|--------------|---------------|
+| Below 100    | 110           |
+| 100–500      | 101           |
+| 500–1000     | 45            |
+| Above 1000   | 39            |
+
+### 📌 Insight
+Most products fall under the lower cost segments, while higher-priced products are limited.
+
+---
+
+## 2️⃣ Customer Segmentation
+
+### 🎯 Objective
+Group customers based on lifespan and total spending.
+
+### 🛠 Business Rules
+
+- **VIP**
+  - Lifespan > 12 months
+  - Total Spending > $5000
+
+- **Regular**
+  - Lifespan > 12 months
+  - Total Spending ≤ $5000
+
+- **New**
+  - Lifespan < 12 months
+
+### 🛠 Logic Used
+- Created a CTE to calculate:
+  - Total spending (`SUM`)
+  - First order date (`MIN`)
+  - Last order date (`MAX`)
+  - Lifespan using `DATEDIFF`
+- Used `CASE` statement to categorize customers
+- Used `COUNT()` to calculate total customers per segment
+
+### 📊 Result
+
+| Customer Segment | Total Customers |
+|------------------|-----------------|
+| Regular          | 1911            |
+| VIP              | 1582            |
+| New              | 14991           |
+
+### 📌 Insight
+A large percentage of customers are new, indicating recent growth in customer acquisition.
+
+---
+
+### 🚀 Skills Practiced
+- CTE (Common Table Expressions)
+- Aggregation Functions
+- CASE Statements
+- Date Functions
+- Data Segmentation Techniques
+---
 
 ## 🔍 SQL Concepts Used
 - SELECT
@@ -132,11 +254,16 @@ Implemented window functions to calculate:
 - Window Functions (OVER, ORDER BY)
 - Running Total
 - Moving Average
+- CTE (WITH clause)
+- SUM()
+- AVG() OVER (PARTITION BY)
+- LAG() OVER (PARTITION BY ORDER BY)
+- Window Aggregation
+- Percentage contribution calculation
+- Year-over-Year comparison
 
----
-- 
+--- 
 
----
 
 ## 🚀 Upcoming Work
 - Window functions (RANK, DENSE_RANK)
