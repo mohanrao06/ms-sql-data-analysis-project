@@ -238,6 +238,62 @@ A large percentage of customers are new, indicating recent growth in customer ac
 - Date Functions
 - Data Segmentation Techniques
 ---
+## 📅 Day 9 – Customer Report (MS SQL Data Analysis Project)
+
+### 📌 Overview
+Day 9 focuses on building a comprehensive **Customer Report** that consolidates customer transaction history into business-ready insights using MS SQL Server.
+
+This step transforms raw transactional data into structured customer intelligence.
+
+---
+
+## 🎯 Objectives
+
+- Aggregate customer-level metrics
+- Segment customers based on behavior
+- Calculate business KPIs
+- Generate analytical features for reporting & decision-making
+
+---
+
+## 🧩 Key Features Implemented
+
+### 1️⃣ Customer Segmentation
+Customers are classified into:
+- **VIP** → Lifespan > 12 months AND Total Sales > 5000
+- **Regular**
+- **New**
+
+Implemented using `CASE` statements.
+
+---
+
+### 2️⃣ Age Group Classification
+Customers are grouped as:
+- Minors (<18)
+- Youth (18–30)
+- Middle-Aged (30–60)
+- Senior Citizens (>60)
+
+---
+
+### 3️⃣ Aggregated Metrics
+
+The following metrics are calculated at customer level:
+
+- Total Orders
+- Total Sales
+- Total Quantity Purchased
+- Total Products
+- Customer Lifespan (in months)
+
+---
+
+### 4️⃣ Business KPIs Calculated
+
+#### 🔹 Recency
+Months since last order:
+```sql DATEDIFF(MONTH, last_order_date, GETDATE()) AS recency ```
 
 ## 🔍 SQL Concepts Used
 - SELECT
